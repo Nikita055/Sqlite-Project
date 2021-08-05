@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">iXLmachineTest</string>
+    <string name="Employee_info">Employee Information</string>
+    <string name="Personal_information">Personal Information </string>
+    <string name="employee_no">Employee No</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="fruit_array">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Orange</item>
+        <item>Mango</item>
+        <item>Pineapple</item>
+        <item>Strawberry</item>
+        <item>Cranberry</item>
+    </string-array>
+</resources>

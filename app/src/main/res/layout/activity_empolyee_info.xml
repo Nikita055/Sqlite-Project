@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context=".EmpolyeeInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/employee_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Employee_info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_1"
+                android:layout_marginTop="27sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="65dp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/employee_no_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background_button_grey"
+            android:layout_marginRight="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/text_size_1"
+            android:inputType="number"
+            android:hint="@string/employee_no"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/employee_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_button_grey"
+            android:layout_marginRight="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/text_size_1"
+            android:inputType="text"
+            android:hint="@string/employee_name"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/designation_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_button_grey"
+            android:layout_marginRight="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/text_size_1"
+            android:inputType="text"
+            android:hint="Designation"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/account_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account type"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/height_30"
+            android:textSize="17sp" />
+
+
+        <Spinner
+            android:id="@+id/account_type_sp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+
+            android:entries="@array/fruit_array"
+            android:scrollbars="none"
+            android:layout_marginRight="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/text_size_1"/>
+
+        <TextView
+            android:id="@+id/work_exp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Experience"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/height_30"
+            android:textSize="17sp" />
+
+
+        <Spinner
+            android:id="@+id/Work_Exp_sp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:entries="@array/fruit_array"
+            android:scrollbars="none"
+            android:layout_marginRight="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/text_size_1"/>
+        <Button
+            android:id="@+id/employee_info_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_grey"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="submit"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

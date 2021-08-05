@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".PersonalInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Personal_info_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Personal_information"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_1"
+            android:layout_marginTop="27sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="65dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/firstname_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_button_grey"
+        android:layout_marginRight="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/text_size_1"
+        android:inputType="text"
+        android:hint="First Name"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/lastname_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button_grey"
+        android:layout_marginRight="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/text_size_1"
+        android:inputType="text"
+        android:hint="Last Name"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button_grey"
+        android:layout_marginRight="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/text_size_1"
+        android:inputType="phone"
+        android:hint="Phone number"
+        android:maxLength="10"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Gender"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/height_30"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/personal_info_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Female" />
+
+
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Other" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Age"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/height_30"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/height_30"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <Button
+        android:id="@+id/personal_info_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_grey"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="submit"/>
+
+
+
+    </LinearLayout>
+
+   </ScrollView>
